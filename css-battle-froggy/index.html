@@ -1,0 +1,88 @@
+<!-----------** CSS Battle #13 - #70 Froggy **----------->
+
+<div class="container">
+  <div class="frog">
+    <div class="nose"></div>
+  </div>
+</div>
+
+<style>
+  body {
+    background-color: #293462;
+  }
+
+  .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Face Styles */
+
+  .frog {
+    position: absolute;
+    margin-top: 4px;
+    width: 150px;
+    height: 100px;
+    background: #fe5f55;
+    border-radius: 50px;
+    background: radial-gradient(
+      circle at 50% -130px,
+      #fe5f55 200px,
+      #a64942 200px
+    );
+  }
+
+  /* Eyes Styles Start */
+
+  .frog:before {
+    content: "";
+    position: absolute;
+    background: #293462;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 10px solid #fff1c1;
+    box-shadow: 0 0 0 10px #fe5f55;
+    top: -15px;
+    left: 25px;
+  }
+
+  .frog:after {
+    content: "";
+    position: absolute;
+    background: #293462;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 10px solid #fff1c1;
+    box-shadow: 0 0 0 10px #fe5f55;
+    top: -15px;
+    left: 95px;
+  }
+
+  /* Eyes Styles End */
+
+  .nose:before {
+    content: "";
+    position: absolute;
+    background: #293462;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 50px;
+    left: 60px;
+  }
+
+  .nose:after {
+    content: "";
+    position: absolute;
+    background: #293462;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 50px;
+    left: 80px;
+  }
+</style>
